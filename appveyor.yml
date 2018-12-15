@@ -1,0 +1,9 @@
+version: 0.0.{build}
+image: Visual Studio 2017
+install:
+  - cmd: npm install
+cache: C:\projects\shoppingcart-demo\node_modules
+build_script:
+  - cmd: npm run build
+test_script:
+  - cmd: npm test
